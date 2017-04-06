@@ -1,0 +1,261 @@
+body{
+  /*background-image:url(background.jpg);*/
+
+  background-position:center;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  background-size: cover;
+  font-size: 25px; margin: 0;
+
+
+}
+
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin: 0;padding: 0;
+}
+h1{color:#8A0917}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+header{/* in this class there are 2 classes*/
+  text-align: center;padding: 3%;color: white;margin-bottom: 0.5%;
+   box-shadow: 3px 3px 5px gray; font-family: cursive; background-color: #7f7fff;
+   display: flex;
+   flex-direction: row;
+}
+header .search{
+  padding-left: 500px;
+  padding-top: 0px;
+
+}
+.mainlogo{
+  position: relative;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes move{
+  from{left: 0px;}
+  to{left: 400px;}
+}
+
+
+input[type="text"]{
+  padding: 5px;
+  border-radius: 10px;
+}
+input[type="submit"]{
+	border-radius: 10px;
+}
+header img{
+  border-radius: 400px;
+}
+.menubar{
+padding: 0.1%;margin-bottom: 0.5%;
+border-bottom: 1px solid black;
+
+}
+.menubar ul{
+  display: flex;flex-direction: row;
+}
+.menubar ul li{
+  margin: 1%;padding: 1%;flex-grow: 1;text-align:center; border-radius: 5px;width:25%;
+}
+
+.menubar ul li:hover{background:#7f7fff; border-radius: 50px 10px 50px 10px}
+.menubar ul li:hover a{color:white;}
+.menubar ul li a{color: #0000ff; text-shadow: 3px 3px 3px gray;}
+.menubar ul li:hover ul{margin: 1% 0 0 0;background: blue;}
+ul li.active{background:#7f7fff;}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color:#e5e5ff;
+  color: black;
+
+  text-align: center;
+}
+
+.content{
+  width: 60%;
+  padding: 0px;
+  margin: 3px;
+}
+.content p{
+text-align: justify;
+
+}
+#me{
+  width: 35%;
+  padding: 3px 4px 1px 10px;
+}
+#me img{
+  height: 600px;
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 112px;
+}
+.foot{
+  background-color: #7f7fff;
+  width: 100%;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 15px;
+  font-family: times;
+  padding-top: 5px;
+
+
+}
+.first{
+  width: 33%;
+  padding-left: 2%;
+}
+.image{
+  height: 180px;
+  width:350px;
+}
+.second{
+  width: 33%;
+  padding-left: 2%;
+}
+.third{
+  width: 33%;
+  padding-left: 2%;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  }
+  .icons img{
+    margin-top: 8px;
+    padding: 8px;
+  }
+
+@media screen and (max-width: 480px)
+{
+body{
+  /*background-image:url(background.jpg);*/
+
+  background-position:center;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  background-size: cover;
+  font-size: 20px; margin: 0;
+
+
+}
+
+
+header{
+  text-align: center;padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+header .search{
+  padding-left: 0;
+  padding-top: 0px;
+
+}
+.mainlogo{
+  position: relative;
+  animation-name: move;
+  animation-duration: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+
+
+
+.menubar{
+padding: 0;margin-bottom: 0.5%;
+text-align: center;
+
+}
+.menubar ul{
+  display: flex;flex-direction: column;
+  text-align: center;
+}
+.menubar ul li{
+  margin: 0;padding: 0;flex-grow: 1;text-align:center; border-radius: 0;width:100%;
+}
+
+.menubar ul li:hover{background:#7f7fff; border-radius: 0}
+.menubar ul li:hover a{color:white; }
+.menubar ul li a{color: #0000ff; line-height: 50px; }
+.menubar ul li:hover ul{margin: 1% 0 0 0;background: blue;}
+ul li.active{background:#7f7fff;}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:#e5e5ff;
+  color: black;
+
+  text-align: center;
+}
+
+.content{
+  width: 60%;
+  padding: 0px;
+  margin: 0px;
+}
+.content p{
+text-align: justify;
+
+}
+#me{
+  width: 100%;
+  padding: 0;
+}
+#me img{
+  height: 600px;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 1px;
+}
+.foot{
+  background-color: #7f7fff;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 15px;
+  font-family: times;
+  padding-top: 5px;
+
+
+}
+.first{
+  width: 99%;
+  padding-left: 0;
+}
+.image{
+  height: 180px;
+  width:90%;
+}
+.second{
+  width: 99%;
+  padding-left: 0;
+}
+.third{
+  width: 99%;
+  padding-left: 0;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  }
+}
